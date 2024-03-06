@@ -1,0 +1,41 @@
+{
+  "name": "AWS-SQS-NodeJs-Example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "license": "MIT",
+  "private": false,
+  "engines": {
+    "node": "20.x.x",
+    "npm": "10.x.x"
+  },
+  "homepage": "",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "bugs": "",
+  "keywords": [],
+  "author": {
+    "name": "Pavlo Sukhinin",
+    "email": "psykhinin@gmail.com",
+    "url": ""
+  },
+  "contributors": [],
+  "scripts": {
+    "01:listen": "node --env-file=.env examples/01-hello-world/listen.js",
+    "01:send": "node --env-file=.env examples/01-hello-world/send.js",
+    "02:listen": "node --env-file=.env examples/02-delayed-messages/listen.js",
+    "02:send": "node --env-file=.env examples/02-delayed-messages/send.js",
+    "03:listen": "node --env-file=.env examples/03-mix-delayed-and-instant-messages/listen.js",
+    "03:send": "node --env-file=.env examples/03-mix-delayed-and-instant-messages/send.js",
+    "04:listen": "node --env-file=.env examples/04-messages-deduplication/listen.js",
+    "04:send": "node --env-file=.env examples/04-messages-deduplication/send.js"
+  },
+  "dependencies": {
+    "@aws-sdk/client-sqs": "3.525.0",
+    "@aws-sdk/credential-providers": "3.525.0",
+    "sqs-consumer": "8.2.0"
+  }
+}
